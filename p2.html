@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+	
+	</head>
+	
+	<style>
+	
+		h1 { text-transform: uppercase;}
+
+	</style>
+	
+	<body>
+		
+		<b> To ja, przemożna Pytia - Zadaj mi w myślach pytanie, a ja odpowiem czy to czym pomyślałeś się spełni</b>
+
+		</br>
+		
+		<input type="button" value="Sprawdź" onclick="che()">
+		
+		</br>
+		
+		<div id="wyn" style="margin-top:20px;">
+		</div>
+		
+		<script type="text/javascript">
+			
+			function che()
+			{
+				var a =(Math.floor(Math.random()*100+1));
+				if(a<=33)
+				{
+					document.getElementById("wyn").innerHTML = '<span style="color:red;">malo </span>' + a;
+				}
+				else if(a>=34 && a<=66)
+				{
+					document.getElementById("wyn").innerHTML ='<span style="color:blue;">w miare </span>' + a;
+				}
+				else if(a>=67)
+				{
+					document.getElementById("wyn").innerHTML = '<span style="color:green;">a rób to bo luz </span>' + a;
+				}
+			}
+			
+		</script>
+
+		</body>
+</html>
