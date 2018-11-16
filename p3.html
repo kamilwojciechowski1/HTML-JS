@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+			
+			<label for="a">Podaj Pierwsze słowo:</label><input type="text" id="a"></br>
+			<label for="b">Podaj Drugie słowo:</label><input type="text" id="b"></br>
+			<input type="submit" value="Przekształć" onclick="tak()"></br>
+			</br>
+			
+			<div id="wyn" style="margin-top: 20px;"></div>
+			
+			<script type="text/javascript">
+				function tak()
+					{
+						var a = document.getElementById("a").value;
+						var b = document.getElementById("b").value;
+						var c = a.substring(0,1);
+						var d =b.substring(0,1);
+						var e = a.substring(1);
+						var f = b.substring(1);
+						var a = d+e;
+						var b= c+f;
+						document.getElementById("wyn").innerHTML = a + " " + b;
+
+					}
+			</script>
+	</body>
+</html>
